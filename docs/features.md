@@ -1,6 +1,7 @@
 # MVP Features
 
 ## Authenticate
+    - Signup
     - Login
     - Logout
 

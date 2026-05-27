@@ -1,11 +1,16 @@
-## MVP/
-    - models
-    - serializers
-    - services
-    - repo
-    - dtos
-    - views
 
+## backend/
+    |- apps/
+        |- mvp-feature/
+            | - models
+            | - serializers
+            | - services
+            | - repositories
+            | - dtos
+            | - views
+    |- core/
+        | - exceptions.py
+        | - permissions.py
 
 ### models - define database structure
 ### serialzer - validate incoming API data

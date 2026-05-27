@@ -10,21 +10,31 @@
     - worker_id
     - worker_name
     - worker_phone
-    - project_id
     - wage_type 
     - wage_amount
-
- wage_type:
+```
+wage_type
     - Daily
     - Hourly
     - Fixed
+```
 
+## WorkerProjectAssignment
+    - worker_id
+    - project_id
+    - joined_date
+    - left_date
+    - is_active
+    
 ## Attendance
     - worker_id
     - project_id
     - date
     - status
-    - marked_by
+    - marked_by 
+```
+marked_by is a FK to User
+```
 
 ## Materials
     - material_id
@@ -46,13 +56,15 @@
 
 ## WorkerPayment
     - worker_id
+    - project_id
     - amount
     - payment_type
     - payment_date
-
- payment_type:
+```
+payment_type:
     - Advance
     - Salary
+```
 
 ## User
     - user_id
@@ -61,8 +73,9 @@
     - phone
     - password
     - role
-
- role:
+```
+role
     - admin
     - supervisor
     - accountant
+```

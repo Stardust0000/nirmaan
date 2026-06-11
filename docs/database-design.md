@@ -4,7 +4,6 @@
     - location
     - start_date
     - status
-    - supervisor_id
 
 ## Worker
     - worker_id
@@ -35,6 +34,29 @@ wage_type
 ```
 marked_by is a FK to User
 ```
+## Milestone
+    - id
+    - project_id
+    - title
+    - description
+    - order
+    - status
+        - Pending
+        - In Progress
+        - Completed
+    - created_by
+    - completed_by
+    - start_date
+    - end_date
+    - created_at
+    - updated_at
+    - completed_date
+
+## UserProjectAssignment
+    - user_id
+    - project_id
+    - project_role
+    - is_active
 
 ## Materials
     - material_id
@@ -72,10 +94,10 @@ payment_type:
     - email
     - phone
     - password
-    - role
+    - company_role
 ```
 role
-    - admin
+    - project manager
     - supervisor
     - accountant
 ```

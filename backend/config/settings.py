@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'apps.workers',
     'apps.milestones',
     'apps.assignments',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [

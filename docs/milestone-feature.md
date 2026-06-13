@@ -27,6 +27,10 @@
     - get_project_milestones (get list of all milestones of a project)
 
 ## Rules:
+    - User may belong to many projects 
+    - Project may contain many users 
+    - Same User cannot be assigned to same Project twice
+    
     - Supervisor can create, update, and mark a milestone of the assigned project
     - Completed milestons can be edited, this will rollback the status to incompleted
     - Milestones of a project can be reordered any time
